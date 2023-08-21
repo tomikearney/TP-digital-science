@@ -5,4 +5,5 @@ const mainController = {
 
 }
 
-module.exports = mainController
+/*Exporto el controlador */
+module.exports = mainController;

@@ -64,4 +64,5 @@ const science = {
 	]
 }
 
-module.exports = science
+/*Exporto */
+module.exports = science;
