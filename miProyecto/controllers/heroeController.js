@@ -14,7 +14,18 @@ const heroeController = {
             }   
         }
         return res.render("heroesDetalle", {array: cientifico, title: "Detalle héroes"})
-
+    }, 
+    bio: function(req, res) {
+        let ingresoId = req.params.id;
+        let ingresoConfirmacion = req.params.ok
+        let cientifico = []
+        for (let i = 0; i < science.lista.length; i++) {
+            if (ingresoId == science.lista[i].id) {
+                cientifico.push(science.lista[i].nombre)
+                cientifico.push(science.lista[i].resenia)
+            }   
+        }
+        return res.render("heroesBio", {array: cientifico, title: "Detalle con bio", confirmacion: ingresoConfirmacion})
     }
 }
 
