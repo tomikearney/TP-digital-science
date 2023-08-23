@@ -20,4 +20,4 @@ const heroeController = {
     }
 }
 
-module.exports = heroeController
+module.exports = heroeController;
