@@ -10,13 +10,14 @@
             <h1><%= title %></h1>
             <p>Welcome to <%= title %></p>
             <p>Hola, mi nombre es <%= array[0] %> y soy <%= array[1] %> </p>
+        <% } else {%>
+            <p>Hola, mi nombre es <%= array[0] %> Lamento que no desees saber de mi </p>
         <% } %>
-        <!--ACA FALTA PONER EL ELSE DE LA OPCIÓN B, Q SERÍA CUANDO EL USUARIO NO RESPONDE OK-->
         
-
     <% } else { %>
         <p>No encontramos al científico indicado. Por favor, elija otro id</p>
     <% } %>
+        <!--FALTA PONER EL ELSE DE LA OPCIÓN C, que se imprima la leyeda-->
 
 
 

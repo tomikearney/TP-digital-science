@@ -4,7 +4,7 @@ const heroeController = require("../controllers/heroeController")
 
 /* GET users listing. */
 
-//Mostrar una lista con los nombre sde las personalidades.
+//Mostrar una lista con los nombre de las personalidades.
 
 router.get('/', heroeController.index);
 
@@ -14,5 +14,6 @@ router.get('/detalle/:id', heroeController.detalle);
 //Mostrar una vista:
 router.get('/bio/id/:id/:ok?', heroeController.bio);
 
-
+//Mostrar créditos:
+router.get('/creditos/', heroeController.creditos )
 module.exports = router;

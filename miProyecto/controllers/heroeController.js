@@ -26,6 +26,10 @@ const heroeController = {
             }   
         }
         return res.render("heroesBio", {array: cientifico, title: "Detalle con bio", confirmacion: ingresoConfirmacion})
+    },
+    creditos: function (req, res) {
+        let integrantes =["Tomas Kearney", "Fran del Yerro","Oriana Cacsire"]
+        return res.render ("creditos", {miembros:integrantes, title:"Créditos"})
     }
 }
 
