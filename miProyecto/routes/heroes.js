@@ -8,8 +8,11 @@ const heroeController = require("../controllers/heroeController")
 
 router.get('/', heroeController.index);
 
-//Mostrar una vista con el texto sig:
+//Mostrar una vista:
 router.get('/detalle/:id', heroeController.detalle);
+
+//Mostrar una vista:
+router.get('/bio/id/:id/:ok?', heroeController.bio);
 
 
 module.exports = router;

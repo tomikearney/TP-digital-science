@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% if (array.length > 0) { %>
+        <% if (confirmacion == "ok") { %>
+            <h1><%= title %></h1>
+            <p>Welcome to <%= title %></p>
+            <p>Hola, mi nombre es <%= array[0] %> y soy <%= array[1] %> </p>
+        <% } %>
+        <!--ACA FALTA PONER EL ELSE DE LA OPCIÓN B, Q SERÍA CUANDO EL USUARIO NO RESPONDE OK-->
+        
+
+    <% } else { %>
+        <p>No encontramos al científico indicado. Por favor, elija otro id</p>
+    <% } %>
+
+
+
+     
+    
+
+
+     
+    
+     
+    
+    
+    
+  </body>
+</html>
